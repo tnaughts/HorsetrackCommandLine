@@ -1,4 +1,5 @@
 class Horse < ActiveRecord::Base
+	has_many :bets
 	validates_presence_of :odds, :number, :name
 	validates_uniqueness_of :name, :number
 
@@ -7,6 +8,14 @@ class Horse < ActiveRecord::Base
 			return "Won"
 		else 
 			return "Lost"
+		end
+	end
+
+	def winner?
+		if self.did_win == "Won"
+			return true
+		else
+			false
 		end
 	end
 

@@ -1,7 +1,8 @@
+
 class HorsesController < ApplicationController
 	def self.show
 		horses = Horse.order(:number)
-		horses_string = ""
+		horses_string = "Horses: \n"
 		horses.each do |horse|
 			horses_string << "#{horse.display}"
 		end
