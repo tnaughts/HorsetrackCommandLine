@@ -3,7 +3,21 @@ class Horse < ActiveRecord::Base
 	validates_uniqueness_of :name, :number
 
 	def did_win
-		false
+		if self.winner
+			return "Won"
+		else 
+			return "Lost"
+		end
+	end
+
+	def horse_won
+		self.winner = true
+		self.save
+	end
+
+	def horse_lost
+		self.winner = false
+		self.save
 	end
 
 	def display
