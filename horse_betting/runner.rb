@@ -5,4 +5,7 @@ require_relative 'config/environment'
 	puts HorsesController.show
 
 	command = gets.chomp
-	puts command
+	command.downcase!
+	while command != "q"
+		command = gets.chomp
+	end
