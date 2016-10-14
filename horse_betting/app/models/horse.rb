@@ -11,13 +11,7 @@ class Horse < ActiveRecord::Base
 		end
 	end
 
-	def winner?
-		if self.did_win == "Won"
-			return true
-		else
-			false
-		end
-	end
+	
 
 	def horse_won
 		self.winner = true

@@ -1,5 +1,5 @@
 #seed file, validations set on model, so multiple seeds will not create duplicates
-Horse.create(name: 'That Darn Gray Cat', number: 1, odds: 5)
+a = Horse.create(name: 'That Darn Gray Cat', number: 1, odds: 5, winner: true)
 Horse.create(name: 'Fort Utopia', number: 2, odds: 10)
 Horse.create(name: 'Count Sheep', number: 3, odds: 9)
 Horse.create(name: 'Ms Traitour', number: 4, odds: 4)
