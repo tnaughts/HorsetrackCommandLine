@@ -12,4 +12,8 @@ class Bill < ActiveRecord::Base
 		self.inventory = 10
 		self.save
 	end
+
+	def bill_cash
+		self.inventory * self.denomination
+	end
 end
