@@ -4,4 +4,7 @@ class HorsesControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end
+
+  # describe HorsesController do
+  # 	describe '.'
 end

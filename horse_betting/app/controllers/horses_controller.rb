@@ -12,9 +12,6 @@ class HorsesController < ApplicationController
 	def self.update_winner(number)
 		winning_number = number.to_i
 		horses = Horse.order(:number)
-		# if horses[0].number > winning_number || horses[-1].number < winning_number
-		# 	return false
-		# end
 		return false if !self.horse_exists(number)
 		horses.each do |horse|
 			if horse.number == winning_number

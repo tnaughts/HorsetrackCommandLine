@@ -5,9 +5,9 @@ class BetsController < ApplicationController
 		if  betted_horse != nil
 			bet = Bet.new(horse_id: betted_horse.id, bet_amount: wagered_amount)
 			if bet.save
-				if betted_horse.winner?
-					payout_string << "#{betted_horse.name}, $#{bet.payout(betted_horse, wagered_amount)} \n"
-					payout_string << MoniesController.dispense(bet.payout(betted_horse, wagered_amount))
+				if betted_horse.winner
+					payout_string << "#{betted_horse.name}, $#{bet.payout} \n"
+					payout_string << MoniesController.dispense(bet.payout)
 				else
 					return "No Payout: #{betted_horse.name}"	
 				end
