@@ -5,7 +5,6 @@ A command line application that simulates a horse betting machine
 built on Ruby version ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-darwin15.0]
 built on Rails version Rails 4.2.1
 
-
 In order to run
   
 ##  Open folder
