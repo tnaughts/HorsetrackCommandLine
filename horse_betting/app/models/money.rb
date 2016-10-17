@@ -7,7 +7,6 @@ class Money < ActiveRecord::Base
 		all_bills.each do |bill|
 			total += bill.bill_cash
 		end
-		
 		total
 	end
 end

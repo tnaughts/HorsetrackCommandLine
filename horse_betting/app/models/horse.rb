@@ -10,9 +10,7 @@ class Horse < ActiveRecord::Base
 			return "Lost"
 		end
 	end
-
 	
-
 	def horse_won
 		self.winner = true
 		self.save
