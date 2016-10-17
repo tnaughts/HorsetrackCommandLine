@@ -1,0 +1,4 @@
+module HorsesHelper
+	
+
+end
